@@ -11,10 +11,11 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 </style></head><body><main>
 <header><img src="icon.png" alt=""><b>AI Usage Monitor</b></header><nav><a href="index-en.html">About</a><a href="privacy-en.html">Privacy Policy</a><a href="terms-en.html">Terms of Service</a><a href="privacy.html">한국어</a></nav>
 <article><h1>AI Usage Monitor Privacy Policy</h1>
-<p>Effective date: October 18, 2026</p>
+<p>Effective date: October 18, 2026 (revised October 20, 2026)</p>
 <p>Zenith Software Lab ("we") provides the AI Usage Monitor app (the "app"). This policy explains what information the app handles and how.</p>
 <h2>1. We do not collect or store your personal information</h2>
 <p>The app has no server operated by us. Everything the app handles is processed and stored only on your phone and is never sent to us. We do not collect or keep any information that identifies you.</p>
+<p>The advertising service included in the app (Google AdMob) collects some information directly. See sections 5 and 6.</p>
 <h2>2. Information processed on your phone</h2>
 <table>
 <thead>
@@ -26,7 +27,7 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 </thead>
 <tbody>
 <tr>
-<td>Sign-in data for AI services (login cookies)</td>
+<td>Sign-in data for AI services (login cookies issued by each service)</td>
 <td>Reading usage from the Claude, ChatGPT and Gemini accounts you sign in to</td>
 <td>The app's private web view storage</td>
 </tr>
@@ -36,7 +37,12 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <td>The app's private database</td>
 </tr>
 <tr>
-<td>App settings (notifications, display)</td>
+<td>Auto-refresh log (time and result of each refresh)</td>
+<td>Letting you check that background refresh works</td>
+<td>The app's private storage</td>
+</tr>
+<tr>
+<td>App settings (notifications, display, app language, ad consent status)</td>
 <td>Keeping your settings</td>
 <td>The app's private storage</td>
 </tr>
@@ -45,65 +51,152 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <ul>
 <li>The app does <strong>not read or store your conversations, name, email or password</strong> in any AI service. It only reads usage and plan information.</li>
 <li>You sign in on each service's own sign-in page. The app never asks for your password.</li>
+<li>This information is processed only to provide the features you use (reading and showing usage).</li>
 </ul>
 <h2>3. Retention</h2>
 <ul>
 <li>Usage history is deleted automatically after 60 days.</li>
+<li>The auto-refresh log keeps only the latest 40 entries.</li>
 <li>Sign-in data is kept for as long as each AI service keeps you signed in, and is deleted immediately when you tap "Disconnect" or uninstall the app.</li>
 <li>Settings are kept until you uninstall the app.</li>
 </ul>
 <h2>4. Sharing and processors</h2>
 <p>We do not share your information with third parties and do not use processors.</p>
-<h2>5. Third-party services included in the app (international transfers)</h2>
-<p>The app includes the services below. These companies collect and process the information directly; we cannot receive or see it.</p>
+<h2>5. Advertising service included in the app (international transfers)</h2>
+<p>The app includes the advertising service below. Google collects and processes this information directly; we cannot receive or see it.</p>
 <table>
 <thead>
 <tr>
-<th>Recipient</th>
-<th>Country</th>
-<th>Information</th>
-<th>Purpose</th>
-<th>When and how</th>
-<th>Retention</th>
+<th>Item</th>
+<th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Recipient</td>
 <td>Google LLC (Google AdMob)</td>
-<td>United States and others</td>
-<td>Advertising ID, device and app information, IP address, ad interaction data</td>
-<td>Showing and measuring ads, preventing fraud</td>
-<td>Sent over the network when ads load</td>
-<td>Per Google's policy</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>https://support.google.com/policies</td>
+</tr>
+<tr>
+<td>Countries</td>
+<td>United States and other countries where Google operates data centers</td>
+</tr>
+<tr>
+<td>Information</td>
+<td>Advertising ID, device and app information (model, OS, app version, etc.), IP address, approximate location (from IP), ad views and clicks, crash and diagnostic data, Android Privacy Sandbox topics and ad measurement data</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>Showing ads, measuring ad performance, preventing fraud, personalized ads (where you consent)</td>
+</tr>
+<tr>
+<td>When and how</td>
+<td>Sent over encrypted connections (HTTPS) when ads load while the app is running</td>
+</tr>
+<tr>
+<td>Retention</td>
+<td>Per Google's privacy policy</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li>Google Privacy Policy: https://policies.google.com/privacy</li>
-<li>How to opt out: delete your advertising ID or turn off personalized ads (section 6). Usage features keep working either way.</li>
-<li>If you are in the EEA, the UK or Switzerland, the app shows Google's consent form before any ads, and you can change your choice anytime under "Ad privacy settings" in the app's settings.</li>
+<li>Opting out and its effect: you can delete your advertising ID or turn off personalized ads and topics (section 6). You will then see non-personalized ads, and usage features keep working.</li>
 <li>Communication with each AI service (Anthropic, OpenAI, Google) happens between you and the service you signed in to, under that company's privacy policy.</li>
 </ul>
-<h2>6. Advertising ID</h2>
-<p>Google AdMob may use your advertising ID to show personalized ads and measure ad performance. To opt out, go to <strong>Settings → Google → Ads → Delete advertising ID</strong> (on some devices <strong>Settings → Privacy → Ads</strong>).</p>
-<h2>7. Your choices</h2>
+<h2>6. Advertising identifiers and your choices</h2>
 <ul>
-<li>Remove one service's sign-in: tap "Disconnect" in the app.</li>
-<li>Delete everything: Settings → Apps → AI Usage Monitor → Storage → Clear data, or uninstall the app.</li>
+<li>Google AdMob may use your advertising ID and Android Privacy Sandbox topics to show personalized ads and measure ad performance.</li>
+<li>Cookies stored in the sign-in screens (web view) are issued by each AI service. We do not collect them.</li>
+<li>How to opt out</li>
+<li>Delete your advertising ID: <strong>Settings → Google → Ads → Delete advertising ID</strong> (on some devices <strong>Settings → Privacy → Ads</strong>)</li>
+<li>Turn off topics: <strong>Settings → Security and privacy → Privacy → Ads → Ad privacy</strong> (menu names vary by device)</li>
+<li>EEA, UK and Switzerland: the app shows Google's consent form before any ads, and you can change or withdraw your choice anytime under <strong>Settings → Ad privacy settings</strong> in the app.</li>
 </ul>
-<h2>8. Security</h2>
+<h2>7. App permissions</h2>
+<p>The app uses only the permissions below. It does not use location, contacts, camera, photos or storage permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Required?</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notifications</td>
+<td>Optional</td>
+<td>Usage alerts, the status bar usage notification and weekly report alerts. The app screens and widgets work without it</td>
+</tr>
+<tr>
+<td>Internet and network state</td>
+<td>Required (granted at install)</td>
+<td>Reading usage, showing ads</td>
+</tr>
+<tr>
+<td>Run at startup</td>
+<td>Required (granted at install)</td>
+<td>Keeping background refresh after the phone restarts</td>
+</tr>
+<tr>
+<td>Advertising ID</td>
+<td>Required (granted at install)</td>
+<td>Showing ads (section 5)</td>
+</tr>
+</tbody>
+</table>
+<p>You can change optional permissions anytime in <strong>Settings → Apps → AI Usage Monitor → Permissions</strong>.</p>
+<h2>8. Your rights</h2>
+<p>You can view, delete or stop the processing of the information on your phone at any time.
+- Remove one service's sign-in: tap "Disconnect" in the app.
+- Delete everything: Settings → Apps → AI Usage Monitor → Storage → Clear data, or uninstall the app.
+- Withdraw ad consent: see section 6.</p>
+<p>Because we keep no information about you, we have nothing to provide in response to access, correction or deletion requests. You or someone acting on your behalf can contact us at the address in section 11.</p>
+<h2>9. Automated decisions</h2>
+<p>The app does not make fully automated decisions that significantly affect your rights or obligations. Limit forecasts and plan suggestions are estimates calculated on your phone for your reference only.</p>
+<h2>10. Security</h2>
 <ul>
 <li>All data is kept in Android's app-private storage, which other apps cannot read.</li>
 <li>Sign-in data is sent only to the matching AI service over encrypted connections (HTTPS).</li>
 <li>With no server of our own, there is no copy of your data outside your phone.</li>
 </ul>
-<h2>9. Children</h2>
-<p>The app is not directed at children under 14.</p>
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 <ul>
 <li>Name: Zenith Software Lab</li>
 <li>Privacy contact: Privacy team, Zenith Software Lab</li>
 <li>Email: contact@zenithsoftlab.com</li>
 </ul>
-<h2>11. Changes</h2>
-<p>We will announce changes in the app and on this page at least 7 days before they take effect.</p></article><footer>© 2026 Zenith Software Lab</footer></main></body></html>
+<h2>12. Children</h2>
+<p>The app is not directed at children under 14.</p>
+<h2>13. Users outside Korea</h2>
+<ul>
+<li><strong>EEA, UK and Switzerland</strong>: We do not collect your personal data. Advertising-related personal data is processed by Google, and personalized ads are shown only if you agree in Google's consent form (your consent is the legal basis). You can withdraw consent at any time and lodge a complaint with your local data protection authority.</li>
+<li><strong>United States</strong>: We do not sell personal information. Google may use information for personalized advertising in the app; you can opt out as described in section 6 (delete your advertising ID or turn off personalized ads).</li>
+</ul>
+<h2>14. Changes</h2>
+<p>We will announce changes in the app and on this page at least 7 days before they take effect.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Effective</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td>October 20, 2026</td>
+<td>Added app permissions, auto-refresh log, automated decisions, users outside Korea, ad topics</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>October 18, 2026</td>
+<td>First version</td>
+</tr>
+</tbody>
+</table></article><footer>© 2026 Zenith Software Lab</footer></main></body></html>
