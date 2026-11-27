@@ -11,7 +11,7 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 </style></head><body><main>
 <header><img src="icon.png" alt=""><b>AI Usage Monitor</b></header><nav><a href="index-en.html">About</a><a href="privacy-en.html">Privacy Policy</a><a href="terms-en.html">Terms of Service</a><a href="privacy.html">한국어</a></nav>
 <article><h1>AI Usage Monitor Privacy Policy</h1>
-<p>Effective date: October 18, 2026 (revised October 20, 2026 and November 30, 2026 — announced November 23, 2026)</p>
+<p>Effective date: October 18, 2026 (revised October 20, 2026, November 30, 2026 — announced November 23, 2026, and December 5, 2026 — announced November 28, 2026)</p>
 <p>Zenith Software Lab ("we") provides the AI Usage Monitor app (the "app"). This policy explains what information the app handles and how.</p>
 <h2>1. We do not collect or store your personal information</h2>
 <p>The app has no server operated by us. Everything the app handles is processed and stored only on your phone and is never sent to us. We do not collect or keep any information that identifies you.</p>
@@ -29,12 +29,12 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <tr>
 <td>Sign-in data for AI services (login cookies issued by each service)</td>
 <td>Reading usage from the Claude, ChatGPT, Gemini and Antigravity accounts you sign in to</td>
-<td>The app's private web view storage (kept separately for each service)</td>
+<td>The app's private web view storage (kept separately for each service). On iPhone, a copy is also kept in the device keychain, readable only by this app and its widgets, so widgets can update without opening the app</td>
 </tr>
 <tr>
 <td>Usage history (time checked, usage %, reset time, forecasts, plan name)</td>
 <td>Showing usage, limit forecasts, usage patterns and weekly reports</td>
-<td>The app's private database</td>
+<td>The app's private database. The latest values shown in widgets are kept in private storage shared by the app and its widgets</td>
 </tr>
 <tr>
 <td>Auto-refresh log (time and result of each refresh)</td>
@@ -57,7 +57,8 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <ul>
 <li>Usage history is deleted automatically after 60 days.</li>
 <li>The auto-refresh log keeps only the latest 40 entries.</li>
-<li>Sign-in data is kept for as long as each AI service keeps you signed in, and is deleted immediately when you tap "Disconnect" or uninstall the app.</li>
+<li>Usage read by iPhone widgets outside the app is moved into usage history when you open the app; until then only the latest 3,000 entries are kept.</li>
+<li>Sign-in data is kept for as long as each AI service keeps you signed in, and is deleted immediately when you tap "Disconnect" or uninstall the app. On iPhone, the keychain copy is deleted on "Disconnect"; because iOS may keep keychain items after an app is deleted, any copy left behind is deleted the first time the app runs after reinstalling.</li>
 <li>Settings are kept until you uninstall the app.</li>
 </ul>
 <h2>4. Sharing and processors</h2>
@@ -86,7 +87,7 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 </tr>
 <tr>
 <td>Information</td>
-<td>Advertising ID, device and app information (model, OS, app version, etc.), IP address, approximate location (from IP), ad views and clicks, crash and diagnostic data, Android Privacy Sandbox topics and ad measurement data</td>
+<td>Advertising ID, device and app information (model, OS, app version, etc.), IP address, approximate location (from IP), ad views and clicks, crash and diagnostic data, Android Privacy Sandbox topics and ad measurement data (Android). On iPhone the app does not ask for permission to track (App Tracking Transparency), so the advertising identifier (IDFA) is not shared</td>
 </tr>
 <tr>
 <td>Purpose</td>
@@ -112,8 +113,9 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <li>Google AdMob may use your advertising ID and Android Privacy Sandbox topics to show personalized ads and measure ad performance.</li>
 <li>Cookies stored in the sign-in screens (web view) are issued by each AI service. We do not collect them.</li>
 <li>How to opt out</li>
-<li>Delete your advertising ID: <strong>Settings → Google → Ads → Delete advertising ID</strong> (on some devices <strong>Settings → Privacy → Ads</strong>)</li>
-<li>Turn off topics: <strong>Settings → Security and privacy → Privacy → Ads → Ad privacy</strong> (menu names vary by device)</li>
+<li>iPhone: the app does not ask to track you and does not use the advertising identifier (IDFA). To block tracking requests from all apps, turn off "Allow Apps to Request to Track" in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+<li>Delete your advertising ID (Android): <strong>Settings → Google → Ads → Delete advertising ID</strong> (on some devices <strong>Settings → Privacy → Ads</strong>)</li>
+<li>Turn off topics (Android): <strong>Settings → Security and privacy → Privacy → Ads → Ad privacy</strong> (menu names vary by device)</li>
 <li>EEA, UK and Switzerland: the app shows Google's consent form before any ads, and you can change or withdraw your choice anytime under <strong>Settings → Ad privacy settings</strong> in the app.</li>
 </ul>
 <h2>7. App permissions</h2>
@@ -130,7 +132,7 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <tr>
 <td>Notifications</td>
 <td>Optional</td>
-<td>Usage alerts, the status bar usage notification and weekly report alerts. The app screens and widgets work without it</td>
+<td>Usage alerts, the status bar usage notification (Android) and weekly report alerts. The app screens and widgets work without it</td>
 </tr>
 <tr>
 <td>Internet and network state</td>
@@ -138,29 +140,30 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 <td>Reading usage, showing ads</td>
 </tr>
 <tr>
-<td>Run at startup</td>
+<td>Run at startup (Android)</td>
 <td>Required (granted at install)</td>
 <td>Keeping background refresh after the phone restarts</td>
 </tr>
 <tr>
-<td>Advertising ID</td>
+<td>Advertising ID (Android)</td>
 <td>Required (granted at install)</td>
 <td>Showing ads (section 5)</td>
 </tr>
 </tbody>
 </table>
-<p>You can change optional permissions anytime in <strong>Settings → Apps → AI Usage Monitor → Permissions</strong>.</p>
+<p>On iPhone the app asks only for notification permission (internet access is not a separate permission).</p>
+<p>You can change optional permissions anytime in <strong>Settings → Apps → AI Usage Monitor → Permissions</strong> (on iPhone, <strong>Settings → Apps → AI Usage Monitor → Notifications</strong>).</p>
 <h2>8. Your rights</h2>
 <p>You can view, delete or stop the processing of the information on your phone at any time.
 - Remove one service's sign-in: tap "Disconnect" in the app.
-- Delete everything: Settings → Apps → AI Usage Monitor → Storage → Clear data, or uninstall the app.
+- Delete everything: uninstall the app, or on Android go to Settings → Apps → AI Usage Monitor → Storage → Clear data.
 - Withdraw ad consent: see section 6.</p>
 <p>Because we keep no information about you, we have nothing to provide in response to access, correction or deletion requests. You or someone acting on your behalf can contact us at the address in section 11.</p>
 <h2>9. Automated decisions</h2>
 <p>The app does not make fully automated decisions that significantly affect your rights or obligations. Limit forecasts and plan suggestions are estimates calculated on your phone for your reference only.</p>
 <h2>10. Security</h2>
 <ul>
-<li>All data is kept in Android's app-private storage, which other apps cannot read.</li>
+<li>All data is kept in app-private storage (Android's app-private storage; on iPhone, the app sandbox plus App Group storage and keychain items that only this app and its widgets can access), which other apps cannot read.</li>
 <li>Sign-in data is sent only to the matching AI service over encrypted connections (HTTPS).</li>
 <li>With no server of our own, there is no copy of your data outside your phone.</li>
 </ul>
@@ -188,6 +191,11 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1.3</td>
+<td>December 5, 2026</td>
+<td>Added the iPhone app: keychain and shared storage for widgets, no tracking request (IDFA not used), iPhone permissions and deletion</td>
+</tr>
 <tr>
 <td>1.2</td>
 <td>November 30, 2026</td>
